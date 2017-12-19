@@ -17,6 +17,8 @@ Route::get('/', function () {
 
 Route::resource('books', 'BooksController');
 
+Route::get('/books/{id}/delete', 'BooksController@destroy');
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
